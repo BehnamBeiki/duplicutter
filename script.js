@@ -277,7 +277,9 @@ class GameOver extends Phaser.Scene {
 
         -VirtualLich-
     
-    behnam_beiki@yahoo.com`);
+    behnam_beiki@yahoo.com
+    
+    `);
 
     start.on(
       "pointerup",
