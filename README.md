@@ -1,4 +1,4 @@
-# Phaser + ES6 + Webpack.
+# Duplicuter
 
 #### A minimalistic card game written in ES6 using Phaser 3
 
