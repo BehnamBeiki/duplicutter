@@ -2,6 +2,8 @@
 
 #### A minimalistic card game written in ES6 using Phaser 3
 
+The first duplicated card wins!
+
 # Setup
 
 To play this game you’ll need to install a few things before you have a working copy of the project.
