@@ -219,16 +219,16 @@ class Game extends Phaser.Scene {
             start.setVisible(true);
             npc.setVisible(true);
             play.setVisible(false);
-            this.add.text(450, 500, `YOU LOSE`, {
-              font: "16px Courier",
+            this.add.text(430, 500, `YOU LOSE`, {
+              font: "20px Courier",
               fill: "#00ff00",
             });
           }
         } else {
           start.setVisible(true);
           play.setVisible(false);
-          this.add.text(450, 100, `YOU WIN`, {
-            font: "16px Courier",
+          this.add.text(430, 100, `YOU WIN`, {
+            font: "20px Courier",
             fill: "#00ff00",
           });
         }
@@ -265,6 +265,20 @@ class GameOver extends Phaser.Scene {
   create() {
     ground = this.add.image(480, 300, "bg");
     start = this.add.image(480, 650, "online_button").setInteractive();
+
+    info = this.add.text(320, 150, "", {
+      font: "18px Courier",
+      fill: "#00ff00",
+    });
+    info.setText(`         Written by
+
+
+        Behnam Beiki
+
+        -VirtualLich-
+    
+    behnam_beiki@yahoo.com`);
+
     start.on(
       "pointerup",
       function () {
