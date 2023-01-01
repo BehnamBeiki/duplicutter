@@ -98,10 +98,20 @@ class MainMenu extends Phaser.Scene {
       this
     );
 
-    info = this.add.text(350, 450, "", {
-      font: "16px Courier",
-      fill: "#00ff00",
-    });
+    info = this.add
+      .text(this.cameras.main.width / 2, 570, "", {
+        fontFamily: "Humongous of Eternity St",
+        fontSize: 24,
+        fontStyle: "bold",
+        color: "#ede9e0",
+      })
+      .setShadow(1.5, 1, "#965515", 1)
+      .setOrigin(0.5);
+
+    // info = this.add.text(350, 450, "", {
+    //   font: "16px Courier",
+    //   fill: "#00ff00",
+    // });
     warning = this.add.text(400, 500, "", {
       font: "16px Courier",
       fill: "#00ff00",
@@ -163,10 +173,21 @@ class Game extends Phaser.Scene {
     poolNpc = Phaser.Utils.Array.Shuffle(cards).slice(4);
 
     ground = this.add.image(480, 300, "bg");
-    info = this.add.text(435, 570, "", {
-      font: "16px Courier",
-      fill: "#00ff00",
-    });
+
+    info = this.add
+      .text(this.cameras.main.width / 2, 570, "", {
+        fontFamily: "Humongous of Eternity St",
+        fontSize: 24,
+        fontStyle: "bold",
+        color: "#ede9e0",
+      })
+      .setShadow(1.5, 1, "#965515", 1)
+      .setOrigin(0.5);
+
+    // info = this.add.text(435, 570, "", {
+    //   font: "16px Courier",
+    //   fill: "#00ff00",
+    // });
 
     start = this.add
       .image(480, 650, "online_button")
@@ -266,10 +287,20 @@ class GameOver extends Phaser.Scene {
     ground = this.add.image(480, 300, "bg");
     start = this.add.image(480, 650, "online_button").setInteractive();
 
-    info = this.add.text(320, 150, "", {
-      font: "18px Courier",
-      fill: "#00ff00",
-    });
+    info = this.add
+      .text(this.cameras.main.width / 2, 570, "", {
+        fontFamily: "Humongous of Eternity St",
+        fontSize: 24,
+        fontStyle: "bold",
+        color: "#ede9e0",
+      })
+      .setShadow(1.5, 1, "#965515", 1)
+      .setOrigin(0.5);
+
+    // info = this.add.text(320, 150, "", {
+    //   font: "18px Courier",
+    //   fill: "#00ff00",
+    // });
     info.setText(`         Written by
 
 
