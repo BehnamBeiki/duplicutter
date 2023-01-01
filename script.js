@@ -99,7 +99,7 @@ class MainMenu extends Phaser.Scene {
     );
 
     info = this.add
-      .text(this.cameras.main.width / 2, 570, "", {
+      .text(this.cameras.main.width / 2, 500, "", {
         fontFamily: "Humongous of Eternity St",
         fontSize: 24,
         fontStyle: "bold",
@@ -108,14 +108,15 @@ class MainMenu extends Phaser.Scene {
       .setShadow(1.5, 1, "#965515", 1)
       .setOrigin(0.5);
 
-    // info = this.add.text(350, 450, "", {
-    //   font: "16px Courier",
-    //   fill: "#00ff00",
-    // });
-    warning = this.add.text(400, 500, "", {
-      font: "16px Courier",
-      fill: "#00ff00",
-    });
+    warning = this.add
+      .text(this.cameras.main.width / 2, 570, "", {
+        fontFamily: "Humongous of Eternity St",
+        fontSize: 24,
+        fontStyle: "bold",
+        color: "#ede9e0",
+      })
+      .setShadow(1.5, 1, "#965515", 1)
+      .setOrigin(0.5);
 
     this.input.mouse.disableContextMenu();
   }
@@ -175,7 +176,7 @@ class Game extends Phaser.Scene {
     ground = this.add.image(480, 300, "bg");
 
     info = this.add
-      .text(this.cameras.main.width / 2, 570, "", {
+      .text(this.cameras.main.width / 2, 580, "", {
         fontFamily: "Humongous of Eternity St",
         fontSize: 24,
         fontStyle: "bold",
@@ -183,11 +184,6 @@ class Game extends Phaser.Scene {
       })
       .setShadow(1.5, 1, "#965515", 1)
       .setOrigin(0.5);
-
-    // info = this.add.text(435, 570, "", {
-    //   font: "16px Courier",
-    //   fill: "#00ff00",
-    // });
 
     start = this.add
       .image(480, 650, "online_button")
@@ -240,18 +236,28 @@ class Game extends Phaser.Scene {
             start.setVisible(true);
             npc.setVisible(true);
             play.setVisible(false);
-            this.add.text(430, 500, `YOU LOSE`, {
-              font: "20px Courier",
-              fill: "#00ff00",
-            });
+            this.add
+              .text(this.cameras.main.width / 2, 470, `YOU LOSE`, {
+                fontFamily: "Humongous of Eternity St",
+                fontSize: 24,
+                fontStyle: "bold",
+                color: "#ede9e0",
+              })
+              .setShadow(1.5, 1, "#965515", 1)
+              .setOrigin(0.5);
           }
         } else {
           start.setVisible(true);
           play.setVisible(false);
-          this.add.text(430, 100, `YOU WIN`, {
-            font: "20px Courier",
-            fill: "#00ff00",
-          });
+          this.add
+            .text(this.cameras.main.width / 2, 120, `YOU WIN`, {
+              fontFamily: "Humongous of Eternity St",
+              fontSize: 24,
+              fontStyle: "bold",
+              color: "#ede9e0",
+            })
+            .setShadow(1.5, 1, "#965515", 1)
+            .setOrigin(0.5);
         }
       },
       this
@@ -288,7 +294,7 @@ class GameOver extends Phaser.Scene {
     start = this.add.image(480, 650, "online_button").setInteractive();
 
     info = this.add
-      .text(this.cameras.main.width / 2, 570, "", {
+      .text(this.cameras.main.width / 2, 300, "", {
         fontFamily: "Humongous of Eternity St",
         fontSize: 24,
         fontStyle: "bold",
@@ -297,18 +303,14 @@ class GameOver extends Phaser.Scene {
       .setShadow(1.5, 1, "#965515", 1)
       .setOrigin(0.5);
 
-    // info = this.add.text(320, 150, "", {
-    //   font: "18px Courier",
-    //   fill: "#00ff00",
-    // });
-    info.setText(`         Written by
+    info.setText(`            Written by :
 
 
-        Behnam Beiki
+           Behnam Beiki
 
-        -VirtualLich-
+          -VirtualLich-
     
-    behnam_beiki@yahoo.com
+   behnam_beiki@yahoo.com
     
     `);
 
@@ -328,13 +330,6 @@ let config = {
   width: 960,
   height: 720,
   // backgroundColor: '#000000',
-  // parent: 'phaser-example',
-  // physics: {
-  //   default: 'arcade',
-  //   arcade: {
-  //     debug: true,
-  //   },
-  // },
   scene: [Preloader, MainMenu, Game, GameOver],
 };
 
