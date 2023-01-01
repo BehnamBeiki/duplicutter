@@ -2,7 +2,7 @@
 
 #### A minimalistic card game written in ES6 using Phaser 3
 
-The first duplicated card wins!
+The first duplicated card cuts the game!
 
 # Setup
 
