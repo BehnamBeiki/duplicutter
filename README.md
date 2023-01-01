@@ -2,6 +2,8 @@
 
 #### A minimalistic card game written in ES6 using Phaser 3
 
+The first duplicated card cuts the game!
+
 # Setup
 
 To play this game you’ll need to install a few things before you have a working copy of the project.
@@ -12,7 +14,7 @@ Navigate into your workspace directory.
 
 Run:
 
-`git clone https://github.com/Behnam-Beiki/duplicuter.git`
+`git clone https://github.com/BehnamBeiki/duplicuter.git`
 
 ## 2. Install node.js and npm:
 
