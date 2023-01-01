@@ -1,6 +1,6 @@
 # Duplicuter
 
-#### A minimalistic card game written in ES6 using Phaser 3
+#### A minimalistic card game, written in ES6 using Phaser 3
 
 The first duplicated card cuts the game!
 
