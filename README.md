@@ -14,7 +14,7 @@ Navigate into your workspace directory.
 
 Run:
 
-`git clone https://github.com/Behnam-Beiki/duplicuter.git`
+`git clone https://github.com/BehnamBeiki/duplicuter.git`
 
 ## 2. Install node.js and npm:
 
