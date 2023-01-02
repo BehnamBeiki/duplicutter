@@ -138,7 +138,7 @@ class MainMenu extends Phaser.Scene {
 
   clickHandler(cards) {
     if (cards.isTinted == 0) {
-      cards.setTint(0xff0000);
+      cards.setTint(0x008080);
       select++;
       pool[pool.length] = cards.texture;
     } else {
