@@ -2,11 +2,15 @@
 
 #### A minimalistic card game, written in ES6 using Phaser 3
 
-The first duplicated card cuts the game!
+Rule: The first duplicated card cuts the game!
+
+# Play
+
+To play the game please visit [Here](https://behnambeiki.github.io/Duplicutter/) 
 
 # Setup
 
-To play this game you’ll need to install a few things before you have a working copy of the project.
+You’ll need to install a few things before you have a working copy of the project.
 
 ## 1. Clone this repo:
 
