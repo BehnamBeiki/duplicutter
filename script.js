@@ -276,6 +276,7 @@ class Game extends Phaser.Scene {
       play.setVisible(true);
     }
   }
+
   update() {
     info.setText(` Round ${round}`);
   }
@@ -285,6 +286,7 @@ class GameOver extends Phaser.Scene {
   constructor() {
     super({ key: "gameover", active: false });
   }
+
   create() {
     ground = this.add.image(480, 300, "bg");
     start = this.add.image(480, 650, "online_button").setInteractive();
@@ -299,7 +301,7 @@ class GameOver extends Phaser.Scene {
       .setShadow(1.5, 1, "#965515", 1)
       .setOrigin(0.5);
 
-    info.setText(`            Written by :
+    info.setText(`             Written by
 
 
            Behnam Beiki
@@ -322,7 +324,6 @@ let config = {
   type: Phaser.AUTO,
   width: 960,
   height: 720,
-  // backgroundColor: '#000000',
   scene: [Preloader, MainMenu, Game, GameOver],
 };
 
