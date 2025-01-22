@@ -6,8 +6,8 @@
   "scripts": {
     "start": "lite-server"
   },
-  "author": "VirtualLich",
-  "license": "VL",
+  "author": "BehnamBeiki",
+  "license": "BB",
   "devDependencies": {
     "lite-server": "^2.5.4"
   },

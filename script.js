@@ -307,10 +307,8 @@ class GameOver extends Phaser.Scene {
 
 
            Behnam Beiki
-
-          -VirtualLich-
-    
-  behnam_beiki@yahoo.com
+  
+  https://behnambeiki.ir
     
     `);
 
