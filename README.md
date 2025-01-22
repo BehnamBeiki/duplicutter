@@ -6,7 +6,7 @@ Rule: The first duplicated card cuts the game!
 
 # Play
 
-To play the game please visit [Here](https://behnambeiki.github.io/Duplicutter/) 
+Play the demo [Here](https://behnambeiki.github.io/duplicutter/) 
 
 # Setup
 
