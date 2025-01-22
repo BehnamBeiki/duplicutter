@@ -10,5 +10,8 @@
   "license": "VL",
   "devDependencies": {
     "lite-server": "^2.5.4"
+  },
+  "dependencies": {
+    "phaser": "^3.87.0"
   }
 }
