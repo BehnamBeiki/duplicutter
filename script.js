@@ -54,15 +54,7 @@ class MainMenu extends Phaser.Scene {
     bg = this.add.image(480, 360, "bg");
 
     let card1 = ["king", "dragon", "wolf", "bear", "snake", "panter", "staff"];
-    let card2 = [
-      "sheild",
-      "flame",
-      "fruit",
-      "ogre",
-      "centaur",
-      "troll",
-      "devil",
-    ];
+    let card2 = ["sheild", "flame", "fruit", "ogre", "centaur", "troll", "devil"];
     let left = 0;
     let left1 = 0;
     let j = 120;
@@ -244,6 +236,7 @@ class Game extends Phaser.Scene {
               .setShadow(1.5, 1, "#965515", 1)
               .setOrigin(0.5);
           }
+          
         } else {
           start.setVisible(true);
           play.setVisible(false);
@@ -301,7 +294,8 @@ class GameOver extends Phaser.Scene {
       .setShadow(1.5, 1, "#965515", 1)
       .setOrigin(0.5);
 
-    info.setText(`             Written by
+    info.setText(`
+                   Written by
 
 
            Behnam Beiki
