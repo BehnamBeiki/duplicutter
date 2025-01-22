@@ -172,9 +172,7 @@ class Game extends Phaser.Scene {
       "devil",
     ];
     poolNpc = Phaser.Utils.Array.Shuffle(cards).slice(4);
-
     ground = this.add.image(480, 300, "bg");
-
     info = this.add
       .text(this.cameras.main.width / 2, 580, "", {
         fontFamily: "Humongous of Eternity St",
@@ -278,7 +276,6 @@ class Game extends Phaser.Scene {
       play.setVisible(true);
     }
   }
-
   update() {
     info.setText(` Round ${round}`);
   }
@@ -288,7 +285,6 @@ class GameOver extends Phaser.Scene {
   constructor() {
     super({ key: "gameover", active: false });
   }
-
   create() {
     ground = this.add.image(480, 300, "bg");
     start = this.add.image(480, 650, "online_button").setInteractive();
@@ -309,7 +305,6 @@ class GameOver extends Phaser.Scene {
            Behnam Beiki
   
     https://behnambeiki.ir/
-    
     `);
 
     start.on(
